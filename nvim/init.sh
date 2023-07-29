@@ -13,7 +13,6 @@ install_nvchad()
 	git clone https://github.com/TheSica/NvChad.git ~/.config/nvim --depth 1
 }
 
-#download_neovim
-
+download_neovim
 install_nvchad
 
