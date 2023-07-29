@@ -10,7 +10,7 @@ download_neovim()
 install_nvchad()
 {
 	echo "Installing nvchad"
-	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+	git clone https://github.com/TheSica/NvChad.git ~/.config/nvim --depth 1
 }
 
 #download_neovim
