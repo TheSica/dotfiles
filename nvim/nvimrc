@@ -1,0 +1,2 @@
+full_path=`readlink -f nvim-linux64/bin/nvim`
+alias vim=$full_path

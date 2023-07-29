@@ -1,3 +1,3 @@
 # Custom LS Color
 
-#export LS_COLORS='*.h=32:*.hpp=32:*.hxx=32:*.c=92:*.cpp=92:di=1;33:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.jar=33:*.py=36:*.txt=94:*.doc=104:*.docx=104:*.odt=104:*.csv=102:*.xlsx=102:*.xlsm=102:*.rb=31:*.sh=96:*.html=96:*zip=4;33:*.tar.gz=4;33:*.-mp4=105:*.mp3=106:*.md=90:*.ini=37'
+export LS_COLORS='*.h=32:*.hpp=32:*.hxx=32:*.c=92:*.cpp=92:di=1;33:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.jar=33:*.py=36:*.txt=94:*.doc=104:*.docx=104:*.odt=104:*.csv=102:*.xlsx=102:*.xlsm=102:*.rb=31:*.sh=96:*.html=96:*zip=4;33:*.tar.gz=4;33:*.-mp4=105:*.mp3=106:*.md=90:*.ini=37'
