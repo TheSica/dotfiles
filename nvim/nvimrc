@@ -1,2 +1,5 @@
-full_path=`readlink -f nvim-linux64/bin/nvim`
+SCRIPT_DIR=$(dirname "$0")
+
+full_path=`readlink -f ${SCRIPT_DIR}/nvim-linux64/bin/nvim`
+echo $full_path
 alias vim=$full_path

@@ -3,7 +3,7 @@ echo "basename: [$(basename "$0")]"
 echo "dirname : [$(dirname "$0")]"
 echo "pwd     : [$(pwd)]"
 
-export SCRIPT_DIR=$(dirname "$0")
+SCRIPT_DIR=$(dirname "$0")
 
 source ${SCRIPT_DIR}/opt_history
 source ${SCRIPT_DIR}/opt_misc
