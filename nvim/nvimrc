@@ -1,3 +1,6 @@
+
+#tmux video, 7:50 for vim-tmux-nav
+
 SCRIPT_DIR=$(dirname "$0")
 
 full_path=`readlink -f ${SCRIPT_DIR}/nvim-linux64/bin/nvim`
