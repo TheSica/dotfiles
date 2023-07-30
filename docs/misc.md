@@ -9,3 +9,10 @@ maybe do these
 set -g default-terminal "screen-256color" set-option -sa terminal-overrides ",xterm-256color:RGB"
 
 set -g default-terminal "tmux-256color" also works
+
+
+
+
+
+
+make init files add source/tmux source to the path
