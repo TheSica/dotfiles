@@ -1,3 +1,5 @@
+SCRIPT_DIR=$(dirname "$0")
+
 install_zsh()
 {
   echo "Installing zsh"
@@ -22,7 +24,17 @@ install_syntax_highlight()
   # Expectation is zshrc has zsh-syntax-highlighting in plugins list
 }
 
+confiure_local_zshrc()
+{
+  ZSHRC_CONF_FILE_PATH=$HOME/.zshrc
+  ZSHRC_CONF_FILE_DOTFILE_PATH=`readlink -f ${SCRIPT_DIR}/zshrc`
+  
+  echo "
+export PATH=\$HOME/bin:/usr/local/bin:\$PATH
+source ${ZSHRC_CONF_FILE_DOTFILE_PATH}" > $ZSHRC_CONF_FILE_PATH
+}
+
 install_zsh
 install_autosuggestion
 install_syntax_highlight
-
+confiure_local_zshrc
