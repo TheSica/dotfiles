@@ -1,10 +1,20 @@
 SCRIPT_DIR=$(dirname "$0")
 
+install_mode=$1
+
 install_tmux()
-{
-  echo "Install tmux by doing some apt-get installs"
-  sudo apt-get install tmux
-}
+{ 
+  if [ $install_mode = "Portable" ]; then
+    echo "Unable to install tmux as portable as of now"
+    exit 0
+  elif [ $install_mode = "Install" ]; then
+    echo "Install tmux by doing some apt-get installs"
+    sudo apt-get install tmux
+   elif [ $install_mode = "Continue" ]; then
+    echo "Will not install tmux using sudo apt-get but will continue with init process"
+  fi
+
+ }
 
 install_tpm()
 {
@@ -21,6 +31,6 @@ configure_local_tmuxrc()
   echo "source-file ${TMUX_CONF_FILE_DOTFILE_PATH}" > $TMUX_CONF_FILE_PATH
 }
 
-install_tmux
+install_tmux  
 install_tpm
 configure_local_tmuxrc
