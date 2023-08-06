@@ -1,10 +1,28 @@
 SCRIPT_DIR=$(dirname "$0")
 
+install_mode=$1
+
 install_zsh()
+{ 
+  if [ $install_mode = "Portable" ]; then
+    echo "Unable to install zsh as portable as of now"
+    exit 0
+  elif [ $install_mode = "Install" ]; then
+    echo "Install zsh by doing some apt-get installs"
+    sudo apt-get install zsh
+   elif [ $install_mode = "Continue" ]; then
+    echo "Will not install zsh using package manager but will continue with init process"
+  fi
+
+}
+
+install_ohmyzsh()
 {
-  echo "Installing zsh"
+  echo "Installing oh-my-zsh"
+  pushd ${SCRIPT_DIR}
   wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh &&
   sh install.sh && rm install.sh
+  popd
 }
 
 install_autosuggestion()
@@ -35,6 +53,7 @@ source ${ZSHRC_CONF_FILE_DOTFILE_PATH}" > $ZSHRC_CONF_FILE_PATH
 }
 
 install_zsh
+install_ohmyzsh
 install_autosuggestion
 install_syntax_highlight
 confiure_local_zshrc

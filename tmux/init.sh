@@ -14,7 +14,7 @@ install_tmux()
     echo "Will not install tmux using sudo apt-get but will continue with init process"
   fi
 
- }
+}
 
 install_tpm()
 {

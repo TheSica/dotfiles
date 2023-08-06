@@ -43,8 +43,8 @@ finish()
 
 initialize_self $1
 
-initialize_zsh
 initialize_nvim
 initialize_tmux
+initialize_zsh
 finish
 
