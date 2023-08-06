@@ -14,5 +14,8 @@ set -g default-terminal "tmux-256color" also works
 
 
 
+# TODO:
+    * [ ] make init files add source/tmux source to the path
+    * [ ] make `clean_command` that removes all installed files
+    * [ ] add `init` command that doesn't install any dependencies, just uses zip files to avoid sudo apt installs
 
-make init files add source/tmux source to the path
