@@ -5,6 +5,10 @@ From https://www.nerdfonts.com/font-downloads
 
 # For windows terminal
 Install catpuccin https://github.com/catppuccin/windows-terminal
+
+# For ubuntu terminal
+Install https://github.com/catppuccin/gnome-terminal
+
 maybe do these
 set -g default-terminal "screen-256color" set-option -sa terminal-overrides ",xterm-256color:RGB"
 
@@ -18,4 +22,8 @@ set -g default-terminal "tmux-256color" also works
     * [ ] make init files add source/tmux source to the path
     * [ ] make `clean_command` that removes all installed files
     * [ ] add `init` command that doesn't install any dependencies, just uses zip files to avoid sudo apt installs
+    * [ ] if a step fails, exit
+    * [ ] nvim init.sh isnt relative to its location, it depends from where the root init.sh was launched
+    * [ ] u need to add sudo apt-get install zsh
+    * [ ] install zsh as last step to avoid problems from its install.sh
 
