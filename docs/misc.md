@@ -15,7 +15,10 @@ set -g default-terminal "screen-256color" set-option -sa terminal-overrides ",xt
 set -g default-terminal "tmux-256color" also works
 
 
-
+# For clean install
+## Nvim
+rm -r ~/.local/share/nvim
+rm -r ~/.local/state/nvim
 
 
 # TODO:
