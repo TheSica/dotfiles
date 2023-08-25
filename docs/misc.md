@@ -26,7 +26,7 @@ rm -r ~/.local/state/nvim
     * [ ] make `clean_command` that removes all installed files
     * [ ] add `init` command that doesn't install any dependencies, just uses zip files to avoid sudo apt installs
     * [ ] if a step fails, exit
-    * [x] nvim init.sh isnt relative to its location, it depends from where the root init.sh was launched
+    * [ ] nvim init.sh isnt relative to its location, it depends from where the root init.sh was launched
     * [x] u need to add sudo apt-get install zsh
     * [x] install zsh as last step to avoid problems from its install.sh
     * [ ] add the export TERM colors
