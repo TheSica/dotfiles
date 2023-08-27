@@ -19,10 +19,8 @@ install_zsh()
 install_ohmyzsh()
 {
   echo "Installing oh-my-zsh"
-  pushd ${SCRIPT_DIR}
-  wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh &&
-  sh install.sh && rm install.sh
-  popd
+  wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -P ${SCRIPT_DIR}
+  sh "${SCRIPT_DIR}/install.sh" &
 }
 
 install_autosuggestion()
@@ -52,8 +50,16 @@ export PATH=\$HOME/bin:/usr/local/bin:\$PATH
 source ${ZSHRC_CONF_FILE_DOTFILE_PATH}" > $ZSHRC_CONF_FILE_PATH
 }
 
+cleanup()
+{
+  echo "Cleaning up zsh/init.sh"
+  rm "${SCRIPT_DIR}/install.sh"
+}
+
 install_zsh
 install_ohmyzsh
 install_autosuggestion
 install_syntax_highlight
 confiure_local_zshrc
+cleanup
+
