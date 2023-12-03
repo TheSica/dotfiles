@@ -4,11 +4,11 @@ install_mode="Unknown"
 
 initialize_self()
 {
-  if [ $1 = "portable" ]; then
+  if [ $1="portable" ]; then
     install_mode="Portable"
-  elif [ $1 = "install" ]; then
+  elif [ $1="install" ]; then
     install_mode="Install" 
-  elif [ $1 = "continue" ]; then
+  elif [ $1="continue" ]; then
     install_mode="Continue"
   else
     echo "Install mode has to be portable or install or continue. quitting"
