@@ -20,7 +20,8 @@ install_ohmyzsh()
 {
   echo "Installing oh-my-zsh"
   wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -P ${SCRIPT_DIR}
-  sh "${SCRIPT_DIR}/install.sh" &
+  chmod +x ${SCRIPT_DIR}/install.sh
+  sh "${SCRIPT_DIR}/install.sh" --unattended
 }
 
 install_autosuggestion()
